@@ -1,7 +1,41 @@
+
 <!DOCTYPE html>
 <html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    
+    <!-- Social Images
+    <meta content="twitter.jpg"  itemprop="image">
+    <meta content="twitter.jpg"  name="twitter:image">
+    <meta content="facebook.jpg" property="og:image"> -->
+    
+    <!-- Titles -->
+    <meta content="Alexandra Weiner" itemprop="name">
+    <meta content="Alexandra Weiner" name="twitter:title">
+    <meta content="Alexandra Weiner" property="og:title">
+    <meta content="Alexandra Weiner" property="og:site_name">
+
+    <title>Alexandra Weiner</title>
+
+    <style>
+    @font-face{font-family:Inter;font-style:normal;font-weight:400;src:url(Inter.woff2) format("woff2")}
+    *{box-sizing:border-box;padding:0;margin:0;background:0 0;text-decoration:none;outline:0;font-family:inherit;font-size:inherit;line-height:inherit;font-weight:inherit;color:inherit;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-feature-settings:"onum","kern","liga","clig","calt"}body,html{width:100%;height:100%;background:#141414;color:#e5e5e5;font-family:Inter,sans-serif}body{display:grid;grid-template-rows:1fr auto}main{padding:0 50px;align-self:center;justify-self:center;text-align:center}h1{font-variation-settings:'wght' 600,'slnt' 0;font-size:40px;line-height:60px}button{font-variation-settings:'wght' 400,'slnt' 0;border:none;appearance:none;font-size:20px;line-height:30px;padding:10px 30px;border-radius:9999px;background:#191919;color:#999;margin-top:1em;transition:color .4s ease-out,background .4s ease-out;cursor:pointer}button:hover{background:#00f;color:#fff}footer{font-variation-settings:'wght' 500,'slnt' 0;text-align:center;padding:30px 50px;font-size:14px;color:#666}a{transition:color .4s ease-out}a:hover{color:#fff}@media (max-width:800px){h1{font-size:30px;line-height:50px}button{font-size:16px;line-height:25px}footer{font-size:12px;line-height:30px}}
+    </style>
+
+
+</head>
 <body>
-<h1>ALEXANDRA WEINER</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <main>
+        <h1>Alexandra Weiner <a href="https://www.youtube.com/watch?v=uq-gYOrU8bA" target="_blank">♫</a></h1>
+        <!-- <button>I need answers!</button> -->
+    </main>
+    <script>        
+    let answers=["test answer"],
+    questions=["test question"],
+    button=document.querySelector("button"),text=document.querySelector("h1");function shuffleArray(e){for(let t=e.length-1;t>0;t--){const n=Math.floor(Math.random()*(t+1));[e[t],e[n]]=[e[n],e[t]]}}button.addEventListener("click",()=>{shuffleArray(answers),shuffleArray(questions);button.innerHTML,text.innerHTML;text.innerHTML=answers[0],button.innerHTML=questions[0]});
+    </script>
+
 </body>
 </html>
